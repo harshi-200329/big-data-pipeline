@@ -1,0 +1,41 @@
+
+
+*Dataset:*
+Gas Sensors for Home Activity Monitoring
+UCI Machine Learning Repository
+https://archive.ics.uci.edu/dataset/362/gas+sensors+for+home+activity+monitoring
+
+*Rows Selected:*
+300,000
+
+*Columns Included:*
+- id
+- time
+- R1
+- R2
+- R3
+- R4
+- R5
+- R6
+- R7
+- R8
+- Temp
+- Humidity
+
+*Cleaning Steps:*
+- Verified the dataset had all expected columns.
+- Selected the first 300,000 rows to create a manageable subset.
+- Checked for missing values in key columns (Temp, Humidity) and filled them with column mean values to avoid dropping rows.
+- Standardized column headers to remove dots and spaces (e.g., "Temp." renamed to "Temp").
+- Confirmed all numeric columns are stored as floats.
+
+*File Name:*
+Iot_300k.csv
+
+*Purpose:*
+This cleaned dataset will be used by all team members for:
+- Data ingestion (Redis)
+- Time-series storage (Cassandra)
+- Data processing and modeling (Python)
+- Cloud integration (AWS S3)
+
